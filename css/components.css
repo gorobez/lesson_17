@@ -41,8 +41,10 @@
     transition: all 0.3s ease;
 }
 
-.button:hover::before {
-    opacity: 1;
+@media (any-hover: hover){
+	.button:hover::before {
+        opacity: 1;
+    }
 }
 
 /* Transparent button */
@@ -54,10 +56,12 @@
     color: #ff3f3a;
 }
 
-.button--transparent:hover {
-    color: #fff;
-}
 
+@media (any-hover: hover){
+	.button--transparent:hover {
+        color: #fff;
+    }
+}
 /* Title */
 
 .label {
