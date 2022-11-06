@@ -611,7 +611,11 @@ body {
 
 .item-course__image {
     flex: 0 0 215px;
-    min-height: 215px;  
+    min-height: 215px; 
+}
+
+.item-course__image img {
+    object-position: top; 
 }
 
 .item-course__body {
@@ -694,18 +698,12 @@ body {
     .item-course {
         flex-direction: column;
     }
-
-    .item-course__image {
-        padding-bottom: 100%;
-        object-position: top;
-    }
 }
 
 /* =================================================== */
 
 .questions-page {
-    padding: 90px 0;
-    
+    padding: 90px 0;   
 }
 
 @media (min-width:870px) {
